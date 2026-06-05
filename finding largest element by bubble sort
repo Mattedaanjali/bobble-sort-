@@ -1,0 +1,11 @@
+def bubble _sort(arr):
+    n = len(arr)
+    for i in range(n):
+       for j in range(n -i- 1):
+           if arr[j] > arr[j+1]:
+              arr [j], arr[ j+1] = arr[j+1], arr[j]
+    return arr
+arr = [1, 2, 5, 9, 3, 6, 8]
+sorted = bubble _sort(arr)
+print("sorted arry:", sorted)
+print("largest element:", sorted[::-1])
